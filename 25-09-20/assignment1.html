@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <style>
+      .flexbox{display: flex;
+               justify-content:space-around;
+               flex-wrap:wrap;
+               background-color:#ffb3b3;}
+      .flexbox > div{transition: transform 0.5s}
+      .flexbox > div:hover{transform: scale(1.2,1.2);}
+      #paw1{border:1px solid white;
+        border-radius: 50%;
+        position: relative;
+        animation-name: paw1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;}
+      #paw2{border:1px solid white;
+        border-radius: 50%;
+        position:relative;
+        animation-name: paw1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: linear;}
+      .head{display: flex;
+            justify-content:space-around;}
+      img{border:1px solid black;
+          height:150px;}
+      div{margin:10px;}
+      @keyframes paw1{
+        from {transform:rotate(-20deg);}
+        to {transform:rotate(20deg);}
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <img src="catpaw.png" id="paw1">
+      <center>
+        <h1>Assignment1</h1>
+        </center>
+        <img src="catpaw.png" id="paw2">
+      </div>
+
+    <div class="flexbox">
+      <div><img src="cat1.jpg" alt="cat1"></div>
+      <div><img src="cat2.jpg" alt="cat2"></div>
+      <div><img src="cat3.jpg" alt="cat3"></div>
+      <div><img src="cat4.jpg" alt="cat4"></div>
+      <div><img src="cat5.jpg" alt="cat5"></div>
+      <div><img src="cat6.jpg" alt="cat6"></div>
+      <div><img src="cat7.jpg" alt="cat7"></div>
+      <div><img src="cat8.jpg" alt="cat8"></div>
+      <div><img src="cat9.jpg" alt="cat9"></div>
+      <div><img src="cat10.jpg" alt="cat10"></div>
+      </div>
+  </body>
+</html>
